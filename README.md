@@ -4,7 +4,6 @@
 `python manage.py runserver {port}`
 
 ## Testing
-
 `coverage run --source='.' manage.py test`
 
 Generate report
@@ -14,3 +13,8 @@ Generate report
 View report 
 
 `coverage report`
+
+### Migrations
+`python manage.py makemigrations ds`
+
+`python manage.py migrate`
