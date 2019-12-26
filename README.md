@@ -1,6 +1,7 @@
 # django-react
 
-## Start development server
+## Backend
+#### Start server
 `python manage.py runserver {port}`
 
 #### Load data from fixture
@@ -16,9 +17,9 @@
 #### Run Unit Test
 `manage.py test`
 
-Run Cypress tests
+#### Run Cypress tests
 
 `npm run e2e`
 
-### Bundling
+## Bundling
 `npm run dev`
