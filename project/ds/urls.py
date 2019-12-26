@@ -1,7 +1,8 @@
-from django.urls import path
+from rest_framework.routers import SimpleRouter
 
 from . import views
 
-urlpatterns = [
-    path('api/ds/', views.DsListCreate.as_view())
-]
+router = SimpleRouter()
+router.register(r'api/ds', views.DsViewSet)
+
+urlpatterns = router.urls

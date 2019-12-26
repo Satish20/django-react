@@ -3,18 +3,22 @@
 ## Start development server
 `python manage.py runserver {port}`
 
-## Testing
-`coverage run --source='.' manage.py test`
+#### Load data from fixture
+`python manage.py loaddata ds`
 
-Generate report
-
-`coverage html`
-
-View report 
-
-`coverage report`
-
-### Migrations
+#### Migrations
 `python manage.py makemigrations ds`
 
 `python manage.py migrate`
+
+## Testing
+
+#### Run Unit Test
+`manage.py test`
+
+Run Cypress tests
+
+`npm run e2e`
+
+### Bundling
+`npm run dev`
